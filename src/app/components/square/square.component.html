@@ -1,0 +1,3 @@
+<button nbButton *ngIf="!value" [disabled]="won">{{ value }}</button>
+<button nbButton hero status="success" *ngIf="value == 'X'" [disabled]="won">{{ value }}</button>
+<button nbButton hero status="info" *ngIf="value == 'O'" [disabled]="won">{{ value }}</button>
